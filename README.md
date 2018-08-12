@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/critical-path/py-limits.svg?branch=master)](https://travis-ci.com/critical-path/py-limits)
+
 ## py-limits v0.1.0
 
 py-limits is a command-line util that retrieves rate limits from GitHub.
