@@ -7,23 +7,23 @@ DATA = {
     "core": {
       "limit": 60,
       "remaining": 30,
-      "reset": 1534003200
+      "reset": 1533988800
     },
     "search": {
       "limit": 10,
       "remaining": 0,
-      "reset": 1534003200
+      "reset": 1533988800
     },
     "graphql": {
       "limit": 0,
       "remaining": 0,
-      "reset": 1534003200
+      "reset": 1533988800
     }
   },
   "rate": {
     "limit": 60,
     "remaining": 30,
-    "reset": 1534003200
+    "reset": 1533988800
   }
 }
 
