@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/critical-path/py-limits.svg?branch=master)](https://travis-ci.com/critical-path/py-limits)
+[![Build Status](https://travis-ci.com/critical-path/py-limits.svg?branch=master)](https://travis-ci.com/critical-path/py-limits)[![Coverage Status](https://coveralls.io/repos/github/critical-path/py-limits/badge.svg)](https://coveralls.io/github/critical-path/py-limits) 
 
 ## py-limits v0.1.0
 
