@@ -58,20 +58,20 @@ Options:
 
 ## Using py-limits: Detailed instructions
 
-To obtain rate limits for GitHub's core API, run limits with or without the --core option.
+To display rate limits for GitHub's core API, run limits with or without the --core option.
 
 ```
 limits
 limits --core
 ```
 
-To obtain rate limits for GitHub's search API, run limits with the --search option.
+To display rate limits for GitHub's search API, run limits with the --search option.
 
 ```
 limits --search
 ```
 
-To obtain rate limits for GitHub's GraphQL API, run limits with the --graphqpl option.
+To display rate limits for GitHub's GraphQL API, run limits with the --graphqpl option.
 
 ```
 limits --graphql
