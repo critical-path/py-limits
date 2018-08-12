@@ -2,7 +2,7 @@
 
 from time import (
     asctime,
-    localtime
+    gmtime
 )
 
 from requests import get
@@ -35,7 +35,7 @@ def parse_data(data):
 def parse_reset(reset):
     """Parse 'reset' (time in seconds)."""
 
-    time = asctime(localtime(reset))
+    time = asctime(gmtime(reset))
     return time
 
 def set_message(limit, remaining, time):
