@@ -31,6 +31,14 @@ def test_cli_http_error(status_code):
     assert result.exit_code != 0
 
 @activate
+def test_cli_non_200_status_code():
+    add(method=GET, url=ENDPOINT, body=JSON, status=201)
+
+    runner = CliRunner()
+    result = runner.invoke(limits)
+    assert result.exit_code == 0
+    
+@activate
 def test_cli():
     add(method=GET, url=ENDPOINT, body=JSON, status=200)
 
