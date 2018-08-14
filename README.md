@@ -99,6 +99,4 @@ pytest -vv --cov --cov-report=term-missing
 
 ## Note
 
-py-limits makes unauthenticated requests to the GitHub API and is, therefore, subject to rate limits.
-
 py-limits uses Coordinated Universal Time.
