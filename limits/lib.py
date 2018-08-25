@@ -1,11 +1,14 @@
 """The library of functions used by py-limits."""
 
+
 from time import (
     asctime,
     gmtime
 )
 
+
 from requests import get
+
 
 def send_request():
     """Send request to GitHub API."""
@@ -14,6 +17,7 @@ def send_request():
     response = get(endpoint)
     response.raise_for_status()
     return response
+
 
 def parse_response(response):
     """Parse response from GitHub API."""
@@ -24,6 +28,7 @@ def parse_response(response):
     graphql = body.get("resources").get("graphql")
     return core, search, graphql
 
+
 def parse_data(data):
     """Parse data."""
 
@@ -32,11 +37,13 @@ def parse_data(data):
     reset = data.get("reset")
     return limit, remaining, reset
 
+
 def parse_reset(reset):
     """Parse 'reset' (time in seconds)."""
 
     time = asctime(gmtime(reset))
     return time
+
 
 def set_message(limit, remaining, time):
     """Set output message."""

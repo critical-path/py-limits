@@ -29,6 +29,7 @@ setup(
     extras_require={
         "test": [
             "coveralls",
+            "flake8",
             "pytest",
             "pytest-cov",
             "responses"
