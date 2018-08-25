@@ -32,6 +32,7 @@ setup(
             "flake8",
             "pytest",
             "pytest-cov",
+            "radon",
             "responses"
         ]
     },
