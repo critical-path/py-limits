@@ -23,6 +23,7 @@ install:
   - pip install --editable .[test]
 
 script:
+  - radon mi --show limits
   - flake8 --count limits
   - py.test -vv --cov --cov-report=term-missing
 

@@ -18,6 +18,7 @@ __Testing__:
 - flake8
 - pytest
 - pytest-cov
+- radon
 - responses
 
 
@@ -91,13 +92,19 @@ limits --no-core --search --graphql
 
 ## Testing py-limits after installation
 
-1. Run `flake8` with the `--count` option.
+1. Run `radon` with the `mi` command and the `--show` option.
+
+```
+radon mi --show limits
+```
+
+2. Run `flake8` with the `--count` option.
 
 ```
 flake8 --count limits
 ```
 
-2. Run `pytest` with the `-vv`, `--cov`, and `--cov-report` options.
+3. Run `pytest` with the `-vv`, `--cov`, and `--cov-report` options.
 
 ```
 pytest -vv --cov --cov-report=term-missing
